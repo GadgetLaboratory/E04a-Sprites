@@ -24,7 +24,7 @@ class MyGame(arcade.Window):
         animals = ['bear','buffalo','chick','chicken','cow','crocodile','dog','duck','elephant','frog','giraffe','goat','gorilla','hippo','horse','monkey','moose','narwhal','owl','panda','parrot','penguin','pig','rabbit','rhino','sloth','snake','walrus','whale','zebra']
 #edit start#
         for critter in animals:
-            animal = random.choose(animals)
+            animal = random.choice(animals)
             x = random.randint(50,750)
             y = random.randint(30,570)
             self.animal_sprite = arcade.Sprite("assets/{animal}.png".format(animal=animal), 0.5)
